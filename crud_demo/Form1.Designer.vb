@@ -32,6 +32,7 @@ Partial Class Form1
         Me.ButtonInsert = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ButtonRead = New System.Windows.Forms.Button()
+        Me.TextBoxHiddenID = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -118,11 +119,19 @@ Partial Class Form1
         Me.ButtonRead.Text = "READ (Retrieve Data)"
         Me.ButtonRead.UseVisualStyleBackColor = True
         '
+        'TextBoxHiddenID
+        '
+        Me.TextBoxHiddenID.Location = New System.Drawing.Point(90, 85)
+        Me.TextBoxHiddenID.Name = "TextBoxHiddenID"
+        Me.TextBoxHiddenID.Size = New System.Drawing.Size(212, 20)
+        Me.TextBoxHiddenID.TabIndex = 10
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBoxHiddenID)
         Me.Controls.Add(Me.ButtonRead)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ButtonInsert)
@@ -151,4 +160,5 @@ Partial Class Form1
     Friend WithEvents ButtonInsert As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents ButtonRead As Button
+    Friend WithEvents TextBoxHiddenID As TextBox
 End Class
