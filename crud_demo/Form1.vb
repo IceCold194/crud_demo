@@ -36,7 +36,7 @@ Public Class Form1
     End Sub
 
     Private Sub ButtonRead_Click(sender As Object, e As EventArgs) Handles ButtonRead.Click
-        Dim query As String = "SELECT * FROM crud_demo_db.students_tbl;"
+        Dim query As String = "SELECT name, age, email FROM crud_demo_db.students_tbl;"
         Try
             Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=crud_demo_db;")
                 Dim adapter As New MySqlDataAdapter(query, conn) ' Get from Database
