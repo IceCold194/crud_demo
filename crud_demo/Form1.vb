@@ -92,7 +92,8 @@ Public Class Form1
     End Sub
 
     Private Sub ButtonDelete_Click(sender As Object, e As EventArgs) Handles ButtonDelete.Click
-        ' Dim query As String = "DELETE FROM `crud_demo_db`.`students_tbl` WHERE (`id` = @id);"
+        ' Dim query As String = "DELETE FROM `crud_demo_db`.`students_tbl`
+        '                           WHERE (`id` = @id);"
         Dim query As String = "UPDATE `crud_demo_db`.`students_tbl` 
                                 SET `is_deleted` = 1 
                                 WHERE (`id` = @id);"
